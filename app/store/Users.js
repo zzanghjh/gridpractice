@@ -6,9 +6,10 @@ Ext.define('gridpractice.store.Users',{
     proxy: {
 	    type: 'ajax',
 	    api: {
+	    	create: 'data/newusers.json',
 	        read: 'data/users.json',
 	        update: 'data/updateUsers.json',
-	        save: 'data/newUsers.json'
+	        destroy: 'data/destroy.json'
 	    },
 	    reader: {
 	        type: 'json',

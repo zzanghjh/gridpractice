@@ -36,10 +36,12 @@ Ext.define('gridpractice.controller.Main', {
 			grid.getStore().sort();
 			win.close();
 			this.getUsersStore().sync();
+			grid.getView().refresh();
 	},
 
 	removeUser: function(){
 		grid.getStore().removeAt(this.index);
+		grid.getView().refresh();
 	}
 
 
